@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Game Config
   m_EditorClassIdentifier: 
   _boardSize: {x: 5, y: 6}
-  _blockerProbability: 20
+  _blockerProbability: 15

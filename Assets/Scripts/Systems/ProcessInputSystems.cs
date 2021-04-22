@@ -34,7 +34,6 @@ public class ProcessInputSystems : ReactiveSystem<InputEntity>, ICleanupSystem
         var piece =_contexts.game.GetPieceAtPosition(pos);
         if (piece != null && piece.isInteractive)
         {
-            Debug.Log("Destroy piece entity" + piece.position.value);
             piece.isDestroyed = true;
         }
 

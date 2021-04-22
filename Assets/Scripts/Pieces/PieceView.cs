@@ -27,7 +27,6 @@ public class PieceView : View
 
     public override void OnDestroyed(GameEntity entity)
     {
-        Debug.Log(gameObject.name + " OnDestroyed");
         var color = _sprite.color;
         color.a = 0f;
         _sprite.material.DOColor(color, destroyDuration);

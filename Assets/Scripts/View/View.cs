@@ -12,6 +12,8 @@ public class View : MonoBehaviour, IView, IPositionListener, IDestroyedListener
     {
         gameObject.Link(entity);
         var e = (GameEntity) entity;
+        e.AddDestroyedListener(this);
+        e.AddPositionListener(this);
         var pos = e.position.value;
         transform.localPosition = new Vector3(pos.x, pos.y, 0f);
     }

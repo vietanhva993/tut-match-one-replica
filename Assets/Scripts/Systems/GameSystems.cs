@@ -12,14 +12,15 @@ public class GameSystems : Feature
 
         // Game
         Add(new BoardSystems(contexts));
+        Add(new ScoreSystems(contexts));
         
         // View
         Add(new AddViewSystems(contexts));
 
         // Event
-//        Add(new GameEventSystems(contexts));
-        Add(new DestroyedEventSystem(contexts));
-        
+        Add(new GameEventSystems(contexts));
+        Add(new GameStateEventSystems(contexts));
+
         // CleanUp
         // Already Implemented in sub-systems 
     }
