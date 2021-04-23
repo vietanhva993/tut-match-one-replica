@@ -13,6 +13,8 @@ public class GameSystems : Feature
         // Game
         Add(new BoardSystems(contexts));
         Add(new ScoreSystems(contexts));
+        Add(new FallSystems(contexts));
+        Add(new FillSystems(contexts));
         
         // View
         Add(new AddViewSystems(contexts));
